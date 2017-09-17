@@ -1,19 +1,31 @@
 <template>
-  <div style="position:static;top=0;left=0;bottom=0;right=0;height:100%;padding:20px;">
-    <v-text-field label="请输入学号" class="mt-5" v-model="first"></v-text-field>
-    <v-text-field label="请输入密码" v-model="middle" :append-icon="e2 ? 'visibility' : 'visibility_off'" :append-icon-cb="() => (e2 = !e2)" :type="e2 ? 'password' : 'text'"></v-text-field>
-    <div class="text-xs-center">
-      <v-btn round primary light router href="index">登录</v-btn>
-    </div>
-  </div>
+  <v-card class="grey lighten-4 elevation-0">
+    <v-card-text>
+      <v-container fluid>
+        <v-layout row>
+          <v-flex xs12>
+            <v-text-field label="请输入学号" class="mt-5" v-model="first"></v-text-field>
+            <v-text-field label="请输入密码" v-model="middle" :append-icon="e2 ? 'visibility' : 'visibility_off'" :append-icon-cb="() => (e2 = !e2)" :type="e2 ? 'password' : 'text'"></v-text-field>
+          </v-flex>
+          <!-- <v-text-field label="请输入学号" class="mt-5" v-model="first"></v-text-field> -->
+          <!-- <v-text-field label="请输入密码" v-model="middle" :append-icon="e2 ? 'visibility' : 'visibility_off'" :append-icon-cb="() => (e2 = !e2)" :type="e2 ? 'password' : 'text'"></v-text-field> -->
+        </v-layout>
+      </v-container>
+    </v-card-text>
+    <v-card-actions>
+      <v-btn round primary light block router href="/index">登录</v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       drawer: true,
       drawerRight: true,
+      first: '',
+      middle: '',
       right: null,
       left: null,
       e3: 1,

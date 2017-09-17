@@ -1,6 +1,6 @@
 <template>
-  <v-app style="height:100%;">
-    <v-toolbar class="indigo" fixed light >
+  <v-app style="height:100%;" >
+    <v-toolbar class="indigo" fixed dark >
       <!--<v-toolbar-side-icon class="ma-0" light @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>-->
       <v-toolbar-title class="pa-0">iSHU 课评社区</v-toolbar-title>
       <v-text-field prepend-icon="search" label="Search..." hide-details single-line light></v-text-field>
@@ -58,6 +58,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="stylus">
+@import './stylus/main'
 </style>
+
