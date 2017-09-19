@@ -15,7 +15,7 @@
         </v-list>
         <v-divider></v-divider>
         <v-list two-line subheader>
-          <v-subheader>Hangout notifications</v-subheader>
+          <v-subheader>设置</v-subheader>
           <v-list-item>
             <v-list-tile avatar>
               <v-list-tile-content>

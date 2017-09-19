@@ -13,7 +13,7 @@
       </v-container>
     </v-card-text>
     <v-card-actions>
-      <v-btn round primary light block router href="/index">登录</v-btn>
+      <v-btn round primary dark block router href="/index">登录</v-btn>
     </v-card-actions>
   </v-card>
 </template>
